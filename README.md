@@ -1,5 +1,5 @@
 ### Current Features
-Blog web application using a separate services for posts and comments.
+Web application that uses separate  microservices for posts and comments. 
 ### Tech
 - [React.js] -  [Node.js] - [Express.js] 
 
