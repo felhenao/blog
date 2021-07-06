@@ -20,7 +20,11 @@ app.post('/events', (req,res) => {
         console.log(err.message);
     });
 
-    res.sendStatus({status: 'ok'});
+    axios.post('http://localhost:4003/events', event).catch((err) => {
+        console.log(err.message);
+    });
+
+    res.sendStatus(200);
 });
 
 app.listen(4005, () => {

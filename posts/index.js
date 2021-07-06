@@ -12,7 +12,6 @@ const posts = {};
 
 app.get('/posts', (req, res) => {
     res.send(posts);
-
 });
 
 app.post('/posts', async (req, res) => {
@@ -35,7 +34,6 @@ app.post('/posts', async (req, res) => {
     });
     
     res.status(201).send(posts[id]);
-
 });
 
 app.post('/events', (req, res) => {
